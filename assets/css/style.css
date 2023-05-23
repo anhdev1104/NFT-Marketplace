@@ -1,0 +1,151 @@
+.app {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nft-text {
+    color: var(--ntf-color);
+}
+
+.header__menu-item.invalid-nav {
+    background: linear-gradient(101.42deg, #9661C6 -45.6%, var(--second-color) 146.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 700;
+}
+
+/* Header */
+.header__top {
+    width: 100%;
+    padding: 3rem 0;
+}
+
+.header__top-block {
+    width: 100%;
+}
+
+.header__top-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+}
+
+.logo_link {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Header menu */
+.header__menu {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    list-style: none;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+}
+
+.menu__item-link {
+    text-decoration: none;
+    color: var(--nav-color);
+}
+
+/* Header content */
+.header__content {
+    width: 100%;
+}
+
+.header__content-wrap {
+    padding-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+
+.header__content-left {
+    /* max-width: 74rem; */
+    width: 55%;
+}
+
+.header__content-greeting {
+    background: linear-gradient(90.83deg, var(--ntf-color) -44.26%, var(--second-color) 145.13%);
+    border-radius: 5rem;
+    width: 47rem;
+    height: 4.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.greeting_text {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.header__content-heading {
+    padding-top: 2.6rem;
+    font-weight: 700;
+    font-size: 6.4rem;
+    line-height: 120.5%;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.content-vector {
+    margin-top: 1.2rem;
+    padding-left: 7.5rem;
+    transform: rotate(-3deg);
+}
+
+.header__content-right {
+    /* max-width: 545px; */
+    width: 38%;
+}
+
+.header__content-color {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.content__suggested-color {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.content-purple {
+    background-color: var(--primary-color);
+}
+
+.content-blue {
+    background-color: var(--second-color);
+}
+
+.content__right-title {
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 4.6rem;    
+    text-transform: capitalize;
+    
+}

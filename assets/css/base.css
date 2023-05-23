@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #6319A9;
+    --second-color: #1280BE;
+    --text-color: #C8C8DC;
+    --nav-color: #F2F2F2;
+    --background-color: #030326;
+    --ntf-color: #8A2BE2;
+    --highlightbg-purple-color: rgba(138, 43, 226, 0.28);
+    --highlightbg-blue-color: rgba(18, 128, 190, 0.38);
+}
+
+/* Reset css */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    /* border: 1px solid white; */
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color); 
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+select,
+textarea {
+    background-color: transparent;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+}
+
+/* button style */
+.btn {
+    min-width: 13rem;
+    height: 5.5rem;
+    line-height: 5.5rem; 
+    padding: 0 2.4rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button Started */
+.btn.btn__started {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    min-width: 21rem;
+}
+
+.btn__started .btn__link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.btn__started:hover {
+    background: linear-gradient(45deg, var(--primary-color) 10%, var(--second-color));
+}
+
+.btn__started:hover .btn__link {
+    color: var(--text-color);
+}
+
