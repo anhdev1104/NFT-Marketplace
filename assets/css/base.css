@@ -7,9 +7,11 @@
     --nav-color: #F2F2F2;
     --background-color: #030326;
     --ntf-color: #8A2BE2;
+    --bg-brand-color: #03022e;
     --text-blur-color: rgba(200, 200, 220, 0.6);
     --highlightbg-purple-color: rgba(138, 43, 226, 0.28);
     --highlightbg-blue-color: rgba(18, 128, 190, 0.38);
+
 }
 
 /* Reset css */
@@ -102,9 +104,8 @@ button {
     border-radius: 10px;
     font-weight: 600;
     font-size: 2.6rem;
+    display: block;
     margin: 6.3rem auto;
-    display: flex;
-    justify-content: center;
     overflow: hidden;
 }
 
@@ -123,7 +124,7 @@ button {
     height: 100%;
     width: 0;
     background-color: #fff;
-    opacity: 0.1;
+    opacity: 0.05;
     z-index: -1;
     transition: all .4s cubic-bezier(.165, .84, .44, 1);
 }
@@ -134,4 +135,28 @@ button {
     right: 0;
     z-index: 1;
     width: 100%;
+}
+
+/* Button marketplace */
+.btn.marketplace__btn {
+    min-width: 237px;
+    height: 5.5rem;
+    padding: 0 2.3rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    margin-top: 3rem;
+    transition: all ease .3s;
+}
+
+.marketplace__btn:hover {
+    background-color: var(--primary-color);
+}
+
+.marketplace__btn .marketplace__btn-link {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    text-transform: capitalize;
+    color: var(--text-color);
+    text-decoration: none;
 }
