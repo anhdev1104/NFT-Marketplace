@@ -24,6 +24,45 @@
     font-weight: 700;
 }
 
+header {
+    position: relative;
+    /* width: 100%; */
+}
+
+.header__highlight-1 {
+    position: absolute;
+    top: -47px;
+    left: -75px;
+    width: 393px;
+    height: 374px;
+    background-color: var(--highlightbg-purple-color);
+    filter: blur(120px);
+    z-index: -1;
+}
+
+.header__highlight-2 {
+    position: absolute;
+    width: 422px;
+    height: 251px;
+    left: 459px;
+    top: 250px;
+    background: url('../img/vector2.png');
+    mix-blend-mode: overlay;
+    z-index: -1;
+}
+
+.header__highlight-3 {
+    position: absolute;
+    position: absolute;
+    width: 399px;
+    height: 377px;
+    left: 941px;
+    top: 82px;
+    background-color: var(--highlightbg-purple-color);
+    filter: blur(120px);
+    z-index: -1;
+}
+
 /* Header */
 .header__top {
     width: 100%;
@@ -147,5 +186,60 @@
     font-size: 3.2rem;
     line-height: 4.6rem;    
     text-transform: capitalize;
-    
+    padding-top: 2.6rem;
+    margin: 0;
+}
+
+.content__right-text {
+    font-weight: 400;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    color: var(--text-blur-color);
+    margin: 0;
+    padding-top: 2rem;
+}
+
+/* Header Slider */
+.header__slider {
+    width: 100%;
+    height: 330px;
+    margin-top: 4.5rem;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.header__track {
+    display: flex;
+    gap: 2rem;
+    /* slide track width = total number of slide (7x2 = 14) x individual slide width (325px) */
+    width: calc(325px * 14);
+    animation: scroll 20s linear infinite;
+}
+
+.slider__block {
+    width: 325px;
+    height: 330px;
+    display: flex;
+    align-items: center;
+}
+
+.slider__images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-325px * 9));
+    }
+}
+
+/* Header btn */
+.header__btn {
+    width: 100%;
 }

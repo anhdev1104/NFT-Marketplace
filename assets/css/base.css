@@ -7,6 +7,7 @@
     --nav-color: #F2F2F2;
     --background-color: #030326;
     --ntf-color: #8A2BE2;
+    --text-blur-color: rgba(200, 200, 220, 0.6);
     --highlightbg-purple-color: rgba(138, 43, 226, 0.28);
     --highlightbg-blue-color: rgba(18, 128, 190, 0.38);
 }
@@ -91,3 +92,46 @@ button {
     color: var(--text-color);
 }
 
+/* Button size L */
+.btn.btn-size-l {
+    position: relative;
+    min-width: 237px;
+    padding: 0 2.4rem;
+    height: 7rem;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 2.6rem;
+    margin: 6.3rem auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.btn-size-l .btn-size-l--link {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.header__btn-sizel::after,
+.header__btn-sizel::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: auto;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #fff;
+    opacity: 0.1;
+    z-index: -1;
+    transition: all .4s cubic-bezier(.165, .84, .44, 1);
+}
+
+.header__btn-sizel:hover::after,
+.header__btn-sizel:hover::before {
+    left: auto;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+}
