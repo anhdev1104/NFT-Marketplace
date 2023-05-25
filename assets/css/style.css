@@ -71,7 +71,7 @@ header {
     width: 100%;
     padding: 2.5rem 0;
     background-color: rgba(0, 0, 0, 0);
-    transition: background-color 0.5s linear;
+    transition: background-color 0.5s ease;
     z-index: 99;
 }
 
@@ -221,7 +221,7 @@ header {
     gap: 2rem;
     /* slide track width = total number of slide (7x2 = 14) x individual slide width (325px) */
     width: calc(325px * 14);
-    animation: scroll 20s linear infinite;
+    animation: scroll 30s linear infinite;
 }
 
 .slider__block {
@@ -289,6 +289,7 @@ header {
     width: 42%;    
 }
 
+.operations__title,
 .marketplace__title {
     position: relative;
     font-weight: 500;
@@ -299,6 +300,7 @@ header {
     margin-left: 2rem;
 }
 
+.operations__title::after,
 .marketplace__title::after {
     content: "";
     position: absolute;
@@ -366,4 +368,37 @@ header {
     transform: translateY(-10rem);
 }
 
+/* Operations */
+.operations {
+    padding-top: 6rem;
+}
 
+.operations__wrap {
+    position: relative;
+}
+
+.operations__title::after {
+    background-color: var(--second-color);
+}
+
+.operations__heading {
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 7rem;
+    text-transform: capitalize;
+    margin: 0;
+    padding-top: 2.7rem;
+    width: 45%;
+}
+
+.operations__text {
+    position: absolute;
+    top: 15rem;
+    right: 0;
+    padding-left: 28%;
+    margin: 0;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.9rem;
+    text-transform: capitalize;
+}
