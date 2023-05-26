@@ -4,7 +4,7 @@ window.addEventListener('scroll', () => {
     const scrolled = window.scrollY
     
     if (scrolled > 0) {
-        header.style.backgroundColor = 'rgba(3, 3, 3, 0.94)'
+        header.style.backgroundColor = 'rgba(3, 3, 3, 0.92)'
     } else {
         header.style.backgroundColor = 'rgba(0, 0, 0, 0)'
     }

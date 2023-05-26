@@ -1,3 +1,14 @@
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--primary-color) 30%, var(--second-color));
+    border-radius: 10px;
+    height: 15rem;
+}
+
+
 .app {
     width: 100%;
     max-width: 1600px;
@@ -52,7 +63,6 @@ header {
 
 .header__highlight-3 {
     position: absolute;
-    position: absolute;
     width: 399px;
     height: 377px;
     left: 941px;
@@ -62,6 +72,16 @@ header {
     z-index: -1;
 }
 
+.header__highlight-4 {
+    position: absolute;
+    top: -60%;
+    right: 4rem;
+    width: 119px;
+    height: 81px;
+    background-color: var(--ntf-color);
+    filter: blur(75.5px);
+}
+
 /* Header */
 .header__top {
     position: fixed;
@@ -69,7 +89,7 @@ header {
     left: 0;
     right: 0;
     width: 100%;
-    padding: 2.5rem 0;
+    padding: 2rem 0;
     background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.5s ease;
     z-index: 99;
@@ -253,6 +273,7 @@ header {
 
 /* Header bottom */
 .header__bottom {
+    position: relative;
     width: 100%;
     height: 15rem;
     background-color: var(--bg-brand-color);
@@ -287,6 +308,11 @@ header {
 
 .marketplace__content-left {
     width: 42%;    
+}
+
+/* operations */
+.operations {
+    position: relative;
 }
 
 .operations__title,
@@ -358,6 +384,7 @@ header {
 
 
 .marketplace__content-right {
+    position: relative;
     width: 50%;    
 }
 
@@ -366,6 +393,17 @@ header {
     height: 100%;
     object-fit: cover;
     transform: translateY(-10rem);
+}
+
+.marketplace__highlight {
+    --highlightbg-blue-color: rgba(18, 128, 190, 0.28);
+    position: absolute;
+    top: 0;
+    width: 67rem;
+    height: 60rem;
+    background: linear-gradient(137.64deg, var(--highlightbg-purple-color) -9.59%, var(--highlightbg-blue-color) 107.03%);
+    filter: blur(12rem);
+    z-index: -1;
 }
 
 /* Operations */
@@ -401,4 +439,137 @@ header {
     font-size: 2rem;
     line-height: 2.9rem;
     text-transform: capitalize;
+}
+
+.operations__content {
+    margin-top: 207px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.operations__content-box {
+    width: 32.5rem;
+    text-transform: capitalize;
+}
+
+.operations__content-box:nth-child(even) {
+    transform: translateY(11rem);
+}
+
+.operations__content-block {
+    display: flex;
+    align-items: end;
+    gap: 2.4rem;
+}
+
+.operations__content-item {
+    position: relative;
+    width: 9.7rem;
+    height: 9.7rem;
+    border-radius: 5px;
+    border: 2px solid var(--text-color);
+}
+
+.operations__content-item::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    bottom: -2rem;
+    width: 5.9rem;
+    height: 5.7rem;
+    border-radius: 5px;
+    background-image: linear-gradient(180deg, var(--primary-color) -232.46%, var(--second-color) 191.23%);
+}
+
+.operations__content-step {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.9rem;
+    color: var(--text-blur-color);
+}
+
+.operations__content-title {
+    margin: 0;
+    padding-top: 5rem;
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 4.6rem;
+}
+
+.operations__content-text {
+    margin: 0;
+    padding-top: 1.3rem;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.9rem;
+}
+
+.operations__content-item--circle {
+    border-radius: 50%;
+}
+
+.operations__content-item--circle::after {
+    content: "";
+    border-radius: 50%;
+    width: 5.4rem;
+    height: 5.4rem;
+    left: 2rem;
+}
+
+.operations__content-item--triangle {
+    position: relative;
+    width: 5.9rem;
+    height: 11rem;
+}
+
+.operations__content-item--triangle::after {
+    content: "";
+    position: absolute;
+    bottom: -4rem;
+    left: 2.5rem;
+    width: 4.3rem;
+    height: 8rem;
+}
+
+.operations__content-highlight1 {
+    position: absolute;
+    top: 20%;
+    width: 67.5rem;
+    height: 41.7rem;
+    background-color: var(--highlightbg-blue-color);
+    filter: blur(12rem);
+    z-index: -1;
+}
+
+.operations__content-highlight2 {
+    position: absolute;
+    bottom: -15rem;
+    left: 20%;
+    width: 39.9rem;
+    height: 37.7rem;
+    background-color: var(--highlightbg-purple-color);
+    filter: blur(12rem);
+    z-index: -1;
+}
+
+.operations__content-highlight3 {
+    position: absolute;
+    bottom: -26rem;
+    right: 22%;
+    width: 49rem;
+    height: 39rem;
+    background-color: var(--highlightbg-purple-color);
+    filter: blur(12rem);
+    z-index: -1;
+}
+
+.operations__content-highlight4 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 39rem;
+    height: 37rem;
+    background-color: var(--highlightbg-purple-color);
+    filter: blur(12rem);
+    z-index: -1;
 }
