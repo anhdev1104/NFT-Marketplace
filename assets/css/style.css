@@ -65,8 +65,8 @@ header {
     position: absolute;
     width: 399px;
     height: 377px;
-    left: 941px;
-    top: 82px;
+    top: -40%;
+    right: 15%;
     background-color: var(--highlightbg-purple-color);
     filter: blur(120px);
     z-index: -1;
@@ -139,7 +139,7 @@ header {
 }
 
 .header__content-wrap {
-    padding-top: 10rem;
+    padding-top: 9rem;
     display: flex;
     flex-wrap: wrap;
     gap: 8rem;
@@ -185,7 +185,7 @@ header {
 }
 
 .header__content-right {
-    /* max-width: 545px; */
+    position: relative;
     width: 38%;
 }
 
@@ -400,6 +400,7 @@ header {
     --highlightbg-blue-color: rgba(18, 128, 190, 0.28);
     position: absolute;
     top: 0;
+    right: 0;
     width: 67rem;
     height: 60rem;
     background: linear-gradient(137.64deg, var(--highlightbg-purple-color) -9.59%, var(--highlightbg-blue-color) 107.03%);
@@ -724,4 +725,29 @@ header {
     line-height: 2.3rem;
     letter-spacing: 0.1em;
     color: var(--text-color);
+}
+
+/* Creators */
+.creators {
+    margin-top: 18.5rem;
+}
+
+.creators__title {
+    position: relative;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.creators__title::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 7px;
+    height: 2rem;
+    background-color: var(--second-color);
 }
