@@ -11,14 +11,14 @@
     --text-blur-color: rgba(200, 200, 220, 0.6);
     --highlightbg-purple-color: rgba(138, 43, 226, 0.28);
     --highlightbg-blue-color: rgba(18, 128, 190, 0.38);
-
+    --border-item-color: rgba(200, 200, 220, 0.38);
 }
 
 /* Reset css */
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
     /* border: 1px solid white; */
 }
 
@@ -26,7 +26,6 @@ html {
     font-size: 62.5%;
     line-height: 1.6rem;
     font-family: 'Raleway', sans-serif;
-    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
@@ -114,6 +113,7 @@ button {
     text-decoration: none;
 }
 
+.collections__btn::after,
 .header__btn-sizel::after,
 .header__btn-sizel::before {
     content: "";
@@ -129,6 +129,7 @@ button {
     transition: all .4s cubic-bezier(.165, .84, .44, 1);
 }
 
+.collections__btn:hover::after,
 .header__btn-sizel:hover::after,
 .header__btn-sizel:hover::before {
     left: auto;
