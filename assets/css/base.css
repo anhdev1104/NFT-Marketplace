@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
 :root {
     --primary-color: #6319A9;
@@ -113,7 +113,10 @@ button {
     text-decoration: none;
 }
 
+.community__btn-normal::after,
+.community__btn-normal::before,
 .collections__btn::after,
+.collections__btn::before,
 .header__btn-sizel::after,
 .header__btn-sizel::before {
     content: "";
@@ -129,7 +132,10 @@ button {
     transition: all .4s cubic-bezier(.165, .84, .44, 1);
 }
 
+.community__btn-normal:hover::after,
+.community__btn-normal:hover::before,
 .collections__btn:hover::after,
+.collections__btn:hover::before,
 .header__btn-sizel:hover::after,
 .header__btn-sizel:hover::before {
     left: auto;
