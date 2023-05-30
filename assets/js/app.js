@@ -34,8 +34,6 @@ tabs.forEach((tab) => {
 
         this.classList.add('invalid-nav')
     }
-
-
 })
 
 
