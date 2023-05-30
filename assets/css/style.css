@@ -26,13 +26,24 @@
     color: var(--ntf-color);
 }
 
-.header__menu-item.invalid-nav {
+/* .header__menu-item.invalid-nav {
     background: linear-gradient(101.42deg, #9661C6 -45.6%, var(--second-color) 146.4%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
     font-weight: 700;
+} */
+
+.line {
+    position: absolute;
+    height: 5px;
+    background-color: var(--primary-color);
+    width: 0;
+    bottom: 28%;
+    left: 0;
+    border-radius: 1.5rem;
+    transition: all .6s ease;
 }
 
 header {
@@ -124,6 +135,10 @@ header {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 2.1rem;
+}
+
+.header__menu-item {
+    position: relative;
 }
 
 .menu__item-link {
