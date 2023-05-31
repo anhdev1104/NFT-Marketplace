@@ -150,12 +150,14 @@ header {
 .header__content {
     width: 100%;
     margin-top: 11rem;
+    /* container-type: inline-size;
+    container-name: headerContent; */
 }
 
 .header__content-wrap {
     padding-top: 9rem;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 8rem;
 }
 
@@ -234,6 +236,7 @@ header {
 .content__right-text {
     font-weight: 400;
     font-size: 2.4rem;
+    line-height: 3rem;
     text-transform: capitalize;
     color: var(--text-blur-color);
     margin: 0;
