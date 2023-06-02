@@ -150,8 +150,8 @@ header {
 .header__content {
     width: 100%;
     margin-top: 11rem;
-    /* container-type: inline-size;
-    container-name: headerContent; */
+    container-type: inline-size;
+    container-name: headerContent;
 }
 
 .header__content-wrap {

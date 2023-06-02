@@ -12,6 +12,9 @@
     --highlightbg-purple-color: rgba(138, 43, 226, 0.28);
     --highlightbg-blue-color: rgba(18, 128, 190, 0.38);
     --border-item-color: rgba(200, 200, 220, 0.38);
+    --form-label-color: #ADADAD;
+    --close-color: rgba(255, 0, 0, 0.628);
+    --white-color: #fff;
 }
 
 /* Reset css */
@@ -118,7 +121,9 @@ button {
     text-decoration: none;
 }
 
-.product__btn:after,
+.form-btn::after,
+.form-btn::before,
+.product__btn::after,
 .product__btn::before,
 .community__btn-normal::after,
 .community__btn-normal::before,
@@ -137,6 +142,8 @@ button {
     transition: all .4s cubic-bezier(.165, .84, .44, 1);
 }
 
+.form-btn:hover::after,
+.form-btn:hover::before,
 .product__btn:hover::after,
 .product__btn:hover::before,
 .community__btn-normal:hover::after,

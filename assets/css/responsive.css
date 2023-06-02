@@ -1,6 +1,7 @@
-/* @container headerContent (width: 260px) {
+@container headerContent (max-width: 830px) {
     .header__content-wrap {
         display: flex;
         flex-direction: column;
+        gap: 20px;
     }
-} */
+}
