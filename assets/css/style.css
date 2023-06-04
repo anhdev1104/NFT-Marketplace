@@ -744,6 +744,7 @@ header {
     line-height: 2.3rem;
     letter-spacing: 0.1em;
     color: var(--text-color);
+    display: block;
 }
 
 /* Creators */
