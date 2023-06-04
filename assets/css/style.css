@@ -37,7 +37,7 @@
 
 .line {
     position: absolute;
-    height: 5px;
+    height: 4px;
     background-color: var(--primary-color);
     width: 0;
     bottom: 28%;
