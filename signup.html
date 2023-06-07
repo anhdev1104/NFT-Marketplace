@@ -62,5 +62,26 @@
             </article>
         </main>
     </div>
+
+    <script src="./assets/js/form.js"></script>
+    <script>
+        Validator({
+            form: '#form-1',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#fullname'),
+                Validator.isEmail('#email'),
+                Validator.minLength('#password', 8),
+                Validator.isConfirmed('#password_confirmation', function () {
+                    return document.querySelector('#form-1 #password').value;
+                }, 'Mật khẩu nhập lại không chính xác !'),
+            ],
+            onSubmit: function (data) {
+                // Call API
+                console.log(data);
+            }
+        })
+    </script>
 </body>
 </html>

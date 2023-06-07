@@ -167,3 +167,11 @@
 .form-info a:hover {
     text-decoration: underline;
 }
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
