@@ -76,6 +76,7 @@
                 Validator.isConfirmed('#password_confirmation', function () {
                     return document.querySelector('#form-1 #password').value;
                 }, 'Re-enter the wrong password !'),
+                Validator.isRequired('#checkbox', 'Please agree to the terms !')
             ],
             onSubmit: function (data) {
                 // Call API
