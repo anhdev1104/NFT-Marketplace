@@ -10,6 +10,7 @@
 
 
 .app {
+    position: relative;
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
@@ -145,6 +146,113 @@ header {
     text-decoration: none;
     color: var(--nav-color);
 }
+
+.header__bars {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+}
+
+.header__bars-icon {
+    font-size: 3.6rem;
+}
+
+.overline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 100;
+    animation: fadeIn ease .3s;
+}
+
+.header__menu-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 8rem 0;
+    padding-left: 5rem;
+    width: 450px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+    list-style: none;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    background-color: var(--bg-brand-color);
+    z-index: 100;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform linear .3s, opacity linear .3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+.header__menu-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    transition: all ease .3s;
+    cursor: pointer;
+}
+
+.header__menu-close:hover .menu__close-icon{
+    color: var(--white-color);
+}
+
+.menu__close-icon {
+    font-size: 4rem;
+}
+
+.menu__mobile-item:nth-child(6) .menu__mobile-link {
+    background: linear-gradient(101.42deg, #9661C6 -45.6%, var(--second-color) 146.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.menu__mobile-item:hover {
+    transform: translateX(1rem);
+    transition: all ease-in-out .2s;
+    cursor: pointer;
+}
+
+.menu__mobile-item:hover .menu__mobile-link {
+    color: var(--second-color);
+}
+
+.menu__mobile-link {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
 
 /* Header content */
 .header__content {
@@ -632,7 +740,8 @@ header {
     display: flex;
     gap: 2rem;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
+    /* flex-wrap: wrap; */
 }
 
 .collections__item {

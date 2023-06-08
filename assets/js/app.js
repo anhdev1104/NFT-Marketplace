@@ -36,4 +36,31 @@ tabs.forEach((tab) => {
     }
 })
 
+// Nav Bars
+const barsIcon = document.querySelector('.header__bars')
+const overLine = document.querySelector('.overline')
+const barsClose = document.querySelector('.header__menu-close')
+const barsModal = document.querySelector('.header__menu-mobile')
 
+function openModal() {
+    overLine.style.display = 'block'
+    barsModal.style.display = 'flex'
+    barsModal.style.opacity = '1'
+    barsModal.style.transform = 'translateX(0%)'
+}
+
+function closeModal() {
+    barsModal.style.transform = 'translateX(100%)'
+    barsModal.style.opacity = '0'
+    overLine.style.display = 'none'
+}
+
+function closeOverLine() {
+    overLine.style.display = 'none'
+    barsModal.style.opacity = '0'
+    barsModal.style.transform = 'translateX(100%)'
+}
+
+barsIcon.addEventListener('click', openModal)
+overLine.addEventListener('click', closeOverLine)
+barsClose.addEventListener('click', closeModal)
