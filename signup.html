@@ -71,11 +71,11 @@
             errorSelector: '.form-message',
             rules: [
                 Validator.isRequired('#fullname', 'Please enter your full name !'),
-                Validator.isEmail('#email'),
+                Validator.isEmail('#email', 'Input value is not email !'),
                 Validator.minLength('#password', 8, 'Please enter at least 8 characters !'),
                 Validator.isConfirmed('#password_confirmation', function () {
                     return document.querySelector('#form-1 #password').value;
-                }, 'Mật khẩu nhập lại không chính xác !'),
+                }, 'Re-enter the wrong password !'),
             ],
             onSubmit: function (data) {
                 // Call API
