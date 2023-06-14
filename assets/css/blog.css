@@ -16,15 +16,7 @@
     text-align: center;
 }
 
-.blog__title::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 46%;
-    width: 7px;
-    height: 20px;
-    background-color: var(--primary-color);
-}
+
 
 .blog__heading {
     margin: 3rem 0 0 0;
@@ -36,8 +28,8 @@
 }
 
 .blog__img-box {
-    width: 80rem;
-    height: 45rem;
+    max-width: 80rem;
+    max-height: 45rem;
     border-radius: 1.5rem;
     overflow: hidden;
     margin: 4rem auto;

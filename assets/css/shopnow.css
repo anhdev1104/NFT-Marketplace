@@ -52,20 +52,10 @@
     line-height: 2.3rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    max-width: 350px;
-    margin: 0 auto;
-    padding-left: 4rem;
+    text-align: center;
 }
 
-.content__title::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 2rem;
-    width: 7px;
-    height: 20px;
-    background-color: var(--second-color);
-}
+
 
 .content__heading {
     margin: 1.8rem 0 6.3rem 0;

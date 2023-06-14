@@ -12,16 +12,6 @@
     text-align: center;
 }
 
-.trend__title::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 43%;
-    width: 7px;
-    height: 20px;
-    background-color: var(--primary-color);
-}
-
 .trend__heading {
     margin: 3rem 0 0 0;
     font-weight: 500;
