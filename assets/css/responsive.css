@@ -28,6 +28,27 @@
     }
 }
 
+@media (max-width: 75em) {
+    /* SHOPNOW */
+    .content__btn-list {
+        flex-wrap: wrap-reverse;
+        gap: 2rem;
+    }
+
+    .content__btn-item {
+        display: none;
+    }
+
+    .content__mobile-item {
+        display: flex;
+        transition: all ease-in-out .2s;
+    }
+
+    .content__mobile-item:hover {
+        opacity: 0.9;
+    }
+}
+
 /* Tablet & Mobile > 1024px*/
 @media (max-width: 63.9375em) { 
     .header__menu {
@@ -52,6 +73,31 @@
 
     .sellstep__step {
         display: none;
+    }
+
+    /* SHOPNOW */
+
+    .trend__content-main {
+        flex-direction: column;
+    }
+
+    .trend__content-left {
+        width: 100%;
+        padding: 0;
+    }
+
+    .trend__content-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .content__header2 {
+        display: none;
+    }
+
+    /* BLOG */
+    .blog__wrap {
+        padding: 0;
     }
 }
 
@@ -263,6 +309,15 @@
 
     .sign-up-right {
         width: 100%;;
+    }
+
+    /* MARKETPLACE */
+    .content__header-item:nth-child(3) {
+        display: none;
+    }
+    
+    .content__item:nth-child(2) {
+        display: none;
     }
 }
 
