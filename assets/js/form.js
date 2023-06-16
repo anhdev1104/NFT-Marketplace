@@ -104,7 +104,7 @@ function Validator(options) {
         // Xử lí sự kiện khi success contact form
         const toastSuccess = {
             title: 'Successful !',
-            message: 'Contact registration successful. We will contact you as soon as possible.',
+            message: 'Successful account registration. Explore the NFT market now.',
             type: 'success',
             duration: 5000,
             icon: 'fa-solid fa-circle-check'
