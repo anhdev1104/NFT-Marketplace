@@ -253,7 +253,6 @@
 
     .operations__content-text {
         text-align: center;
-        
     }
 
     .collections {
@@ -262,6 +261,24 @@
 
     .collections__item {
         width: 90%;
+    }
+
+    .sellstep__content {
+        flex-direction: column;
+    }
+
+    .sellstep__step {
+        display: block;
+    }
+
+    .sellstep__title {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .sellstep__text {
+        max-width: 100%;
+        text-align: center;
     }
 
     .community__box {
